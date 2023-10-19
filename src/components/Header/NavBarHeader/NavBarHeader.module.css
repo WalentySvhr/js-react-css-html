@@ -1,0 +1,28 @@
+.navigationHeader {
+    width: 100%;
+    /* border:  solid 1px red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.homeIcon, .friendsIcon, .movieIcon, .marketIcon, .gamesIcon{ 
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+}
+
+.buttonIcon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90px;
+    height: 40px;
+}
+
+.buttonIcon:hover{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(51, 51, 51);
+    border-radius: 15px; 
+}

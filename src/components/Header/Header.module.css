@@ -1,0 +1,11 @@
+.header {
+  grid-area: h;
+  background-color: rgb(32, 32, 32);
+  display: grid;
+  grid-template-columns: 3fr 7fr 2fr;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  padding: 10px;
+  z-index: 100; 
+}

@@ -1,0 +1,24 @@
+.headerUser {
+    width: 100%;
+    /* border: solid 1px red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+   
+}
+
+.menuIcon, .messageIcon, .bellIcon, .userIcon {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border: solid 1px rgb(43, 43, 43);
+    border-radius: 15px;
+    background-color: rgb(43, 43, 43);
+}

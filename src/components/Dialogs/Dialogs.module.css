@@ -1,0 +1,14 @@
+.main {
+  display: grid;
+  grid-template-columns: 2fr 10fr;
+  margin: 20px;
+}
+
+.dialogs a {
+  color: white;
+  text-decoration: none;
+}
+
+.dialogs a:focus{
+  color: red;
+}
