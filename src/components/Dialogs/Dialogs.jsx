@@ -2,35 +2,22 @@ import React from "react"
 import styles from './Dialogs.module.css';
 import DialogItem from "./DialogItem/DialogItem";
 import Message from "./Messages/Messages";
-
-
+import { addFriend } from "../../redux/state";
 
 
 
 const Dialogs = (props) => {
+    let dialogsElements = props.dialogs.map((dialog) => <DialogItem name={dialog.name} id={dialog.id} />)
+    let messagesElement = props.messages.map((message) => <Message message={message.message} />)
 
-    let dialogs = [
-        { id: 1, neme: 'Walenty' },
-        { id: 2, neme: 'Andrye' },
-        { id: 3, neme: 'Sasha' },
-        { id: 4, neme: 'Wiktor' },
-    ]
+  
 
-    let dialogsElements = dialogs.map((dialog) => <DialogItem name={dialog.neme} id={dialog.id} />)
-
-    let messages = [
-        { id: 1, message: 'Hi' },
-        { id: 2, message: 'It for u' },
-        { id: 3, message: 'Nice' },
-
-    ]
-
-    let messagesElement = messages.map((message) => <Message message={message.message} />)
-
-    return (
-        <div className={styles.main}>
+     return (
+        <div className={styles.mainContainer}>
             <div className={styles.dialogs}>
-                {dialogsElements}
+                <textarea></textarea>
+                <button>add</button>
+                {dialogsElements} 
             </div>
             <div className={styles.message}>
                 {messagesElement}

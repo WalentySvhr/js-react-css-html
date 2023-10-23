@@ -2,6 +2,7 @@ import React from 'react';
 import style from './HeaderUser.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faMessage,faBell,faUser } from '@fortawesome/free-solid-svg-icons';
+import { NavLink } from 'react-router-dom';
 
 
 const HeaderUser = () => {
@@ -11,7 +12,7 @@ const HeaderUser = () => {
                 <FontAwesomeIcon icon={faBars} className={style.menuIcon} />
             </div>
             <div className={style.button}>
-                <FontAwesomeIcon icon={faMessage} className={style.messageIcon} />
+            <NavLink to='/friend'><FontAwesomeIcon icon={faMessage} className={style.messageIcon} /></NavLink> 
             </div>
             <div className={style.button}>
             <FontAwesomeIcon icon={faBell}  className={style.bellIcon} />

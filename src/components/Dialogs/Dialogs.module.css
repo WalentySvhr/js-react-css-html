@@ -1,14 +1,21 @@
-.main {
-  display: grid;
-  grid-template-columns: 2fr 10fr;
+.mainContainer {
+  display: flex;
+  grid-template-columns: 1fr 11fr;
+  width: 100%;
+  border:  1px solid red;
   margin: 20px;
 }
 
-.dialogs a {
-  color: white;
+.dialogs{
+  width: 20%;
+}
+.dialogs a{
+  color:  white;
   text-decoration: none;
 }
 
-.dialogs a:focus{
-  color: red;
+.message{
+  color:  white;
+  
 }
+
