@@ -1,7 +1,6 @@
 import React from 'react';
 import styles from './MyPosts.module.css';
 import Post from './Post/Post';
-import { faDebian } from '@fortawesome/free-brands-svg-icons';
 
 
 
@@ -13,15 +12,19 @@ const MyPosts = (props) => {
     let newPostElement = React.createRef();
 
     let addPost = () => {
+        props.addPost();
+    }
+
+    let onPostChange = () => {
         let text = newPostElement.current.value;
-        props.addPost(text);
+        props.updateNewPostText(text);
     }
 
     return (
         <div className={styles.content}>
             <h3>My Post</h3>
             <div>
-                <textarea ref={newPostElement} ></textarea>
+                <textarea onChange={onPostChange} ref={newPostElement} value={props.newPostText} />
             </div>
             <div>
                 <button onClick={addPost} className={styles.button}>New post</button>
